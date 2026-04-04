@@ -5,37 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="keywords" content="Singapore Vision Day, Singapore Vision Day 2026, 2nd Singapore Vision Day, Computer Vision, Computer Graphics, Embodied AI">
-
-  <link rel="shortcut icon" href="static/img/SVD-logo.jpeg">
-
   <title>Singapore Vision Day 2026</title>
- <meta name="description" content="Website for the Singapore Vision Day 2026">
-
-<!-- ================= SOCIAL META ================= -->
-<!-- Open Graph -->
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Singapore Vision Day 2026"/>
-<meta property="og:description" content="Singapore Vision Day 2026 brings together Singapore’s communities in vision, graphics, multimedia, embodied AI, multimodal LLMs and beyond."/>
-<meta property="og:url" content="https://singaporevisionday.github.io/svd2026/"/>
-<meta property="og:site_name" content="Singapore Vision Day"/>
-
-<!-- Image -->
-<meta property="og:image" content="https://singaporevisionday.github.io/svd2026/static/img/SVD-Banner.png"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Singapore Vision Day 2026"/>
-<meta name="twitter:description" content="Singapore Vision Day 2026 brings together Singapore’s communities in vision, graphics, multimedia, embodied AI, multimodal LLMs and beyond."/>
-<meta name="twitter:image" content="https://singaporevisionday.github.io/svd2026/static/img/SVD-Banner.png"/>
-
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="static/css/main.css">
-
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
@@ -43,19 +17,8 @@
 <!-- ================= NAVBAR ================= -->
 <div class="navbar navbar-default navbar-fixed-top custom-nav hide-mobile">
   <div class="container">
-
-    <!-- MOBILE TOGGLE -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
     <div class="navbar-collapse collapse" id="navbar-main">
 
-      <!-- LEFT MENU -->
       <ul class="nav navbar-nav nav-left">
         <li><a href="#intro">Introduction</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
@@ -64,7 +27,6 @@
         <li><a href="#organizers">Organizers</a></li>
       </ul>
 
-      <!-- RIGHT LOGO -->
       <ul class="nav navbar-nav navbar-right nav-right">
         <li>
           <a href="#">
@@ -80,38 +42,32 @@
 <!-- ================= PAGE START ================= -->
 <div class="container">
   <div class="page-content">
+
     <!-- Banner -->
     <div class="row" id="banner">
       <div class="col-md-12">
         <img src="static/img/SVD-Banner.png" style="width:100%; border-radius:8px;">
       </div>
     </div>
-  </div>
-</div>
 
+    <!-- ================= PROGRAM HIGHLIGHTS ================= -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-card accent-orange">
 
-<!-- ================= PROGRAM HIGHLIGHTS ================= -->
-<div class="row">
-  <div class="col-md-12">
+          <h2 class="section-title">Program Highlights</h2>
 
-    <div class="section-card accent-orange">
+          <p class="section-text">
+            Singapore Vision Day 2026 brings together an exciting lineup of talks and discussions spanning computer vision, computer graphics, multimedia, embodied AI, multimodal LLMs, and beyond. 
+            The program features a keynote by 
+            <a href="https://www.3dunderstanding.org/team.html" target="_blank"><strong>Prof. Angela Dai</strong></a>, 
+            complemented by a dynamic series of short talks from leading local researchers and invited regional speakers across academia and industry. 
+            Attendees can also look forward to two engaging panel discussions on rapidly emerging topics including world models and embodied AI.
+          </p>
 
-      <h2 class="section-title">Program Highlights</h2>
-
-      <p class="section-text">
-        Singapore Vision Day 2026 brings together an exciting lineup of talks and discussions spanning computer vision, computer graphics, multimedia, embodied AI, multimodal LLMs, and beyond. 
-        The program features a keynote by 
-        <a href="https://www.3dunderstanding.org/team.html" target="_blank"><strong>Prof. Angela Dai</strong></a>, 
-        complemented by a dynamic series of short talks from leading local researchers and invited regional speakers across academia and industry. 
-        Attendees can also look forward to two engaging panel discussions on rapidly emerging topics including world models and embodied AI.
-      </p>
-
+        </div>
+      </div>
     </div>
-
-  </div>
-</div>
-
-
 <!-- ================= REGISTRATION + VENUE ================= -->
 <div class="row">
   <div class="col-md-12">
@@ -676,29 +632,9 @@ His research focuses on computer vision and graphics, particularly in capturing 
   </div>
 </div>
 
-<hr />
-    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-    <script>
-    document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+<!-- JS -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
 
-        const target = document.querySelector(this.getAttribute('href'));
-        if (!target) return;
-
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = targetPosition - navbarHeight - 10; // small padding
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-
-  </body>
+</body>
 </html>
