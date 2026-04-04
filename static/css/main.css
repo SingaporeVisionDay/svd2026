@@ -61,7 +61,7 @@ border-bottom: none;
 }
 
 /* =====================================================
-NAVBAR (DESKTOP)
+NAVBAR (DESKTOP ONLY)
 ===================================================== */
 .navbar {
 background: #ffffff;
@@ -277,12 +277,19 @@ text-align: center;
 }
 
 /* =====================================================
-MOBILE (NAVBAR + LAYOUT + TEXT FIX)
+MOBILE (NO NAVBAR + LEFT ALIGN)
 ===================================================== */
 @media (max-width: 768px) {
 
+/* REMOVE NAVBAR */
+.navbar {
+display: none !important;
+}
+
 body {
-padding-top: 65px;
+padding-top: 20px;
+font-size: 15px;
+line-height: 1.6;
 }
 
 .container {
@@ -290,65 +297,20 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
-/* NAVBAR */
-.navbar {
-height: auto;
-padding: 8px 0;
-}
-
-.custom-nav .navbar-collapse {
-flex-direction: column;
-align-items: flex-start;
-background: #fff;
-padding: 10px 0;
-}
-
-.custom-nav .nav-left {
-width: 100%;
-flex-direction: column;
-}
-
-.custom-nav .nav-left > li {
-width: 100%;
-}
-
-.custom-nav .nav-left > li > a {
-display: block;
-width: 100%;
-padding: 12px 20px;
-font-size: 15px;
-line-height: normal;
-border-top: 1px solid #eee;
-}
-
-.custom-nav .nav-right {
-width: 100%;
-justify-content: center;
-margin-top: 10px;
-}
-
-.custom-nav .nav-right img {
-height: 40px;
-}
-
-.navbar-toggle {
-border: none;
-margin-top: 12px;
-}
-
-.navbar-toggle .icon-bar {
-background-color: #333;
-}
-
-/* TEXT ALIGNMENT FIX */
+/* FORCE LEFT ALIGN */
+body,
 p,
+div,
+li,
+td,
 .section-text,
 .section-subtext,
-.speaker-bio,
-.intro-list,
-.registration-list {
+.speaker-bio {
 text-align: left !important;
-hyphens: none;
+}
+
+p {
+hyphens: none !important;
 }
 
 /* SPEAKER STACK */
