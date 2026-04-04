@@ -2,35 +2,36 @@
 GLOBAL
 ===================================================== */
 body {
-font-size: 17px;
-line-height: 1.7;
-font-weight: 400;
--webkit-font-smoothing: antialiased;
-color: #333;
-padding-top: 100px;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  padding-top: 100px;
 }
 
 body *::selection {
-background: #ff7a00;
-color: #fff;
+  background: #ff7a00;
+  color: #fff;
 }
 
 .container {
-max-width: 980px;
+  max-width: 980px;
 }
 
 img {
-max-width: 100%;
-display: block;
+  max-width: 100%;
+  display: block;
 }
+
 
 /* =====================================================
 TYPOGRAPHY
 ===================================================== */
 h1, h2, h3 {
-color: #1a1a1a;
-font-weight: 500;
-margin-bottom: 12px;
+  color: #1a1a1a;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 h1 { font-size: 32px; }
@@ -38,326 +39,318 @@ h2 { font-size: 26px; }
 h3 { font-size: 20px; }
 
 p {
-text-align: justify;
-margin-bottom: 10px;
-hyphens: auto;
+  text-align: justify;
+  margin-bottom: 10px;
+  hyphens: auto;
 }
+
 
 /* =====================================================
 LINKS
 ===================================================== */
 a {
-text-decoration: none;
-border-bottom: 1px solid #ccc;
-color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  color: inherit;
 }
 
 a:hover {
-border-color: #ff7a00;
+  border-color: #ff7a00;
 }
 
 .navbar a {
-border-bottom: none;
+  border-bottom: none;
 }
 
+
 /* =====================================================
-NAVBAR (DESKTOP ONLY)
+NAVBAR
 ===================================================== */
 .navbar {
-background: #ffffff;
-box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-height: 90px;
-display: flex;
-align-items: center;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .custom-nav {
-min-height: 90px;
+  min-height: 90px;
 }
 
 .custom-nav .navbar-collapse {
-display: flex !important;
-align-items: center;
+  display: flex !important;
+  align-items: center;
 }
 
 .custom-nav .nav-left {
-display: flex !important;
-flex: 1;
-justify-content: space-between;
-align-items: center;
-margin-right: 20px;
+  display: flex !important;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .custom-nav .nav-left > li > a {
-font-size: clamp(17px, 1.2vw, 20px);
-font-weight: 500;
-padding: 0;
-line-height: 90px;
-white-space: nowrap;
+  font-size: clamp(17px, 1.2vw, 20px);
+  font-weight: 500;
+  padding: 0;
+  line-height: 90px;
+  white-space: nowrap;
 }
 
 .custom-nav .nav-right {
-display: flex !important;
-align-items: center;
+  display: flex !important;
+  align-items: center;
 }
 
 .custom-nav .nav-right img {
-height: 50px;
-object-fit: contain;
+  height: 50px;
+  object-fit: contain;
 }
 
 .custom-nav .navbar-nav > li > a {
-padding-left: 0 !important;
-padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
+
+.navbar-nav > li > a {
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar-nav > li > a:hover {
+  color: #1e40af;
+}
+
 
 /* =====================================================
 SECTION CARDS
 ===================================================== */
 .section-card {
-padding: 28px 30px;
-margin-bottom: 30px;
-background: #ffffff;
-border-radius: 10px;
-border: 1px solid #f0f0f0;
-box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 28px 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .accent-orange { border-left: 4px solid #ff7a00; }
 .accent-blue   { border-left: 4px solid #2563eb; }
 
 .section-title {
-text-align: center;
+  text-align: center;
 }
 
 .section-text {
-font-size: 17px;
-line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.7;
 }
+
 
 /* =====================================================
 LISTS
 ===================================================== */
 .intro-list,
 .registration-list {
-margin-top: 10px;
-padding-left: 0;
-list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .intro-list li,
 .registration-list li {
-position: relative;
-padding-left: 18px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.intro-list li::before,
+.registration-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
 }
 
 .intro-list li::before {
-content: "•";
-position: absolute;
-left: 0;
-color: #ff7a00;
+  color: #ff7a00;
 }
 
 .registration-list li::before {
-content: "•";
-position: absolute;
-left: 0;
-color: #2563eb;
+  color: #2563eb;
 }
+
 
 /* =====================================================
 SPEAKER
 ===================================================== */
 .speaker {
-display: flex;
-gap: 25px;
-align-items: flex-start;
-margin-top: 20px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .speaker-img img {
-width: 160px;
-height: 160px;
-object-fit: cover;
-border-radius: 8px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .speaker-bio {
-flex: 1;
+  flex: 1;
 }
 
 .speaker-bio h3 {
-margin-top: 0;
-margin-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 
 .speaker-bio h3 a {
-border-bottom: none;
+  border-bottom: none;
 }
 
 .speaker-bio h3 a:hover {
-color: #1e40af;
+  color: #1e40af;
 }
 
 .speaker-divider {
-border: none;
-border-top: 1px solid #eee;
-margin: 25px 0;
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 25px 0;
 }
+
 
 /* =====================================================
 SPONSOR
 ===================================================== */
 .sponsor-subtext {
-text-align: left;
-color: #666;
-margin-top: 10px;
+  text-align: left;
+  color: #666;
+  margin-top: 10px;
 }
 
 .sponsor-logo {
-display: flex;
-justify-content: center;
-margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .sponsor-logo img {
-max-height: 80px;
+  max-height: 80px;
 }
+
 
 /* =====================================================
 SCHEDULE TABLE
 ===================================================== */
 .schedule-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
 
 .schedule-table td {
-padding: 10px 12px;
-font-size: 15px;
-border-bottom: 1px solid #eee;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
 }
 
 .schedule-table tr:last-child td {
-border-bottom: none;
+  border-bottom: none;
 }
 
 #schedule .schedule-table td:first-child {
-text-align: left;
+  text-align: left;
 }
 
 #schedule .schedule-table td:last-child {
-text-align: right;
-white-space: nowrap;
-font-weight: 500;
-color: #555;
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 500;
+  color: #555;
 }
 
 #schedule .schedule-table tr:nth-child(even) td {
-background: #fafafa;
+  background: #fafafa;
 }
 
 #schedule .schedule-table tr:hover td {
-background: #f5f5f5;
+  background: #f5f5f5;
 }
 
 .schedule-table td[colspan] {
-text-align: center !important;
-color: #777;
-padding: 18px;
-font-style: italic;
+  text-align: center !important;
+  color: #777;
+  padding: 18px;
+  font-style: italic;
 }
+
 
 /* =====================================================
 UTIL
 ===================================================== */
 .text-center {
-text-align: center;
+  text-align: center;
 }
 
+
 /* =====================================================
-MOBILE (HARD OVERRIDE — WORKS WITH BOOTSTRAP)
+MOBILE
 ===================================================== */
 @media (max-width: 768px) {
 
-  /* ===== REMOVE NAVBAR COMPLETELY ===== */
-  .navbar,
-  .navbar-fixed-top,
-  .custom-nav,
-  .navbar-collapse,
-  .navbar-header {
+  .hide-mobile {
     display: none !important;
-    height: 0 !important;
-    min-height: 0 !important;
-    overflow: hidden !important;
   }
 
-  /* remove offset caused by fixed navbar */
   body {
     padding-top: 0 !important;
-    margin-top: 0 !important;
     font-size: 15px;
     line-height: 1.6;
   }
 
-  /* ===== FIX BANNER ===== */
-  #banner {
-    margin-top: 10px !important;
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  #banner img {
-    width: 100%;
-    display: block;
-  }
-
-  /* ===== FORCE LEFT ALIGN (STRONG) ===== */
-  body,
   p,
-  span,
-  div,
-  li,
-  td,
-  h1, h2, h3,
   .section-text,
   .section-subtext,
-  .speaker-bio {
-    text-align: left !important;
+  li {
+    text-align: left;
+    hyphens: none;
   }
 
-  p {
-    hyphens: none !important;
+  #banner {
+    margin-top: 10px;
   }
 
-  /* ===== LAYOUT ===== */
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-
-  /* ===== SPEAKER STACK ===== */
   .speaker {
-    flex-direction: column !important;
-    align-items: center !important;
+    flex-direction: column;
+    align-items: center;
   }
 
   .speaker-img img {
-    width: 120px !important;
-    height: auto !important;
+    width: 120px;
+    height: auto;
   }
 
   .speaker-bio {
     width: 100%;
   }
 
-  /* ===== TABLE FIX ===== */
   .schedule-table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
   }
 
-  /* ===== MAP ===== */
   iframe {
     width: 100% !important;
     height: 250px !important;
