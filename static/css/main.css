@@ -1,27 +1,36 @@
-/* ===== GLOBAL ===== */
+/* =====================================================
+GLOBAL
+===================================================== */
 body {
-  font-size: 17px;
-  line-height: 1.7;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  color: #333;
-  padding-top: 100px;
+font-size: 17px;
+line-height: 1.7;
+font-weight: 400;
+-webkit-font-smoothing: antialiased;
+color: #333;
+padding-top: 100px;
 }
 
 body *::selection {
-  background: #ff7a00;
-  color: #fff;
+background: #ff7a00;
+color: #fff;
 }
 
 .container {
-  max-width: 980px;
+max-width: 980px;
 }
 
-/* ===== TYPOGRAPHY ===== */
+img {
+max-width: 100%;
+display: block;
+}
+
+/* =====================================================
+TYPOGRAPHY
+===================================================== */
 h1, h2, h3 {
-  color: #1a1a1a;
-  font-weight: 500;
-  margin-bottom: 12px;
+color: #1a1a1a;
+font-weight: 500;
+margin-bottom: 12px;
 }
 
 h1 { font-size: 32px; }
@@ -29,317 +38,344 @@ h2 { font-size: 26px; }
 h3 { font-size: 20px; }
 
 p {
-  text-align: justify;
-  margin-bottom: 10px;
-  hyphens: auto;
+text-align: justify;
+margin-bottom: 10px;
+hyphens: auto;
 }
 
-/* ===== LINKS ===== */
+/* =====================================================
+LINKS
+===================================================== */
 a {
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
-  color: inherit;
+text-decoration: none;
+border-bottom: 1px solid #ccc;
+color: inherit;
 }
 
 a:hover {
-  border-color: #ff7a00;
+border-color: #ff7a00;
 }
 
 .navbar a {
-  border-bottom: none;
+border-bottom: none;
 }
 
-/* ===== IMAGES ===== */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ===== NAVBAR ===== */
+/* =====================================================
+NAVBAR (DESKTOP)
+===================================================== */
 .navbar {
-  background: #ffffff;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-  height: 90px;
-  display: flex;
-  align-items: center;
+background: #ffffff;
+box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+height: 90px;
+display: flex;
+align-items: center;
 }
 
 .custom-nav {
-  min-height: 90px;
+min-height: 90px;
 }
 
 .custom-nav .navbar-collapse {
-  display: flex !important;
-  align-items: center;
+display: flex !important;
+align-items: center;
 }
 
 .custom-nav .nav-left {
-  display: flex !important;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 20px;
+display: flex !important;
+flex: 1;
+justify-content: space-between;
+align-items: center;
+margin-right: 20px;
 }
 
 .custom-nav .nav-left > li > a {
-  font-size: clamp(17px, 1.2vw, 20px);
-  font-weight: 500;
-  padding: 0;
-  line-height: 90px;
-  white-space: nowrap;
+font-size: clamp(17px, 1.2vw, 20px);
+font-weight: 500;
+padding: 0;
+line-height: 90px;
+white-space: nowrap;
 }
 
 .custom-nav .nav-right {
-  display: flex !important;
-  align-items: center;
+display: flex !important;
+align-items: center;
 }
 
 .custom-nav .nav-right img {
-  height: 50px;
-  object-fit: contain;
+height: 50px;
+object-fit: contain;
 }
 
 .custom-nav .navbar-nav > li > a {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
 }
 
-/* ===== SECTION CARDS ===== */
+/* =====================================================
+SECTION CARDS
+===================================================== */
 .section-card {
-  padding: 28px 30px;
-  margin-bottom: 30px;
-  background: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #f0f0f0;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+padding: 28px 30px;
+margin-bottom: 30px;
+background: #ffffff;
+border-radius: 10px;
+border: 1px solid #f0f0f0;
+box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .accent-orange { border-left: 4px solid #ff7a00; }
 .accent-blue   { border-left: 4px solid #2563eb; }
 
 .section-title {
-  text-align: center;
+text-align: center;
 }
 
 .section-text {
-  font-size: 17px;
-  line-height: 1.7;
+font-size: 17px;
+line-height: 1.7;
 }
 
-/* ===== LISTS ===== */
+/* =====================================================
+LISTS
+===================================================== */
 .intro-list,
 .registration-list {
-  margin-top: 10px;
-  padding-left: 0;
-  list-style: none;
+margin-top: 10px;
+padding-left: 0;
+list-style: none;
 }
 
 .intro-list li,
 .registration-list li {
-  position: relative;
-  padding-left: 18px;
+position: relative;
+padding-left: 18px;
 }
 
 .intro-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #ff7a00;
+content: "•";
+position: absolute;
+left: 0;
+color: #ff7a00;
 }
 
 .registration-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #2563eb;
+content: "•";
+position: absolute;
+left: 0;
+color: #2563eb;
 }
 
-.intro-list li { margin-bottom: 4px; }
-.registration-list li { margin-bottom: 2px; }
-
-.intro-list li:first-child,
-.registration-list li:first-child {
-  margin-top: 12px;
-}
-
-/* ===== SPEAKER ===== */
+/* =====================================================
+SPEAKER
+===================================================== */
 .speaker {
-  display: flex;
-  gap: 25px;
-  align-items: flex-start;
-  margin-top: 20px;
+display: flex;
+gap: 25px;
+align-items: flex-start;
+margin-top: 20px;
 }
 
 .speaker-img img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
+width: 160px;
+height: 160px;
+object-fit: cover;
+border-radius: 8px;
 }
 
 .speaker-bio {
-  flex: 1;
+flex: 1;
 }
 
 .speaker-bio h3 {
-  margin-top: 0;
-  margin-bottom: 6px;
+margin-top: 0;
+margin-bottom: 6px;
 }
 
 .speaker-bio h3 a {
-  border-bottom: none;
+border-bottom: none;
 }
 
 .speaker-bio h3 a:hover {
-  color: #1e40af;
+color: #1e40af;
 }
 
 .speaker-divider {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 25px 0;
+border: none;
+border-top: 1px solid #eee;
+margin: 25px 0;
 }
 
-/* ===== SPONSOR ===== */
+/* =====================================================
+SPONSOR
+===================================================== */
 .sponsor-subtext {
-  text-align: left;
-  color: #666;
-  margin-top: 10px;
+text-align: left;
+color: #666;
+margin-top: 10px;
 }
 
 .sponsor-logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+display: flex;
+justify-content: center;
+margin-top: 15px;
 }
 
 .sponsor-logo img {
-  max-height: 80px;
+max-height: 80px;
 }
 
-/* ===== SCHEDULE TABLE ===== */
+/* =====================================================
+SCHEDULE TABLE
+===================================================== */
 .schedule-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
 }
 
 .schedule-table td {
-  padding: 10px 12px;
-  font-size: 15px;
-  border-bottom: 1px solid #eee;
+padding: 10px 12px;
+font-size: 15px;
+border-bottom: 1px solid #eee;
 }
 
 .schedule-table tr:last-child td {
-  border-bottom: none;
+border-bottom: none;
 }
 
-/* schedule alignment */
 #schedule .schedule-table td:first-child {
-  text-align: left;
+text-align: left;
 }
 
 #schedule .schedule-table td:last-child {
-  text-align: right;
-  white-space: nowrap;
-  font-weight: 500;
-  color: #555;
+text-align: right;
+white-space: nowrap;
+font-weight: 500;
+color: #555;
 }
 
 #schedule .schedule-table tr:nth-child(even) td {
-  background: #fafafa;
+background: #fafafa;
 }
 
 #schedule .schedule-table tr:hover td {
-  background: #f5f5f5;
+background: #f5f5f5;
 }
 
-/* poster placeholder */
 .schedule-table td[colspan] {
-  text-align: center !important;
-  color: #777;
-  padding: 18px;
-  font-style: italic;
+text-align: center !important;
+color: #777;
+padding: 18px;
+font-style: italic;
 }
 
-/* ===== UTIL ===== */
+/* =====================================================
+UTIL
+===================================================== */
 .text-center {
-  text-align: center;
+text-align: center;
 }
 
-/* ===== MOBILE ===== */
+/* =====================================================
+MOBILE (NAVBAR + LAYOUT + TEXT FIX)
+===================================================== */
 @media (max-width: 768px) {
 
-  body {
-    padding-top: 70px;
-  }
+body {
+padding-top: 65px;
+}
 
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.container {
+padding-left: 15px;
+padding-right: 15px;
+}
 
-  /* NAVBAR */
-  .navbar {
-    height: auto;
-    padding: 8px 0;
-  }
+/* NAVBAR */
+.navbar {
+height: auto;
+padding: 8px 0;
+}
 
-  .custom-nav .nav-left {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
+.custom-nav .navbar-collapse {
+flex-direction: column;
+align-items: flex-start;
+background: #fff;
+padding: 10px 0;
+}
 
-  .custom-nav .nav-left > li > a {
-    line-height: normal;
-    font-size: 15px;
-  }
+.custom-nav .nav-left {
+width: 100%;
+flex-direction: column;
+}
 
-  .custom-nav .nav-right {
-    justify-content: center;
-    margin-top: 10px;
-  }
+.custom-nav .nav-left > li {
+width: 100%;
+}
 
-  /* SECTIONS */
-  .section-card {
-    padding: 20px;
-  }
+.custom-nav .nav-left > li > a {
+display: block;
+width: 100%;
+padding: 12px 20px;
+font-size: 15px;
+line-height: normal;
+border-top: 1px solid #eee;
+}
 
-  .section-title {
-    font-size: 22px;
-  }
+.custom-nav .nav-right {
+width: 100%;
+justify-content: center;
+margin-top: 10px;
+}
 
-  .section-text {
-    font-size: 15px;
-  }
+.custom-nav .nav-right img {
+height: 40px;
+}
 
-  /* SPEAKER STACK */
-  .speaker {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
+.navbar-toggle {
+border: none;
+margin-top: 12px;
+}
 
-  .speaker-img img {
-    width: 120px;
-    height: auto;
-  }
+.navbar-toggle .icon-bar {
+background-color: #333;
+}
 
-  .speaker-bio {
-    width: 100%;
-  }
+/* TEXT ALIGNMENT FIX */
+p,
+.section-text,
+.section-subtext,
+.speaker-bio,
+.intro-list,
+.registration-list {
+text-align: left !important;
+hyphens: none;
+}
 
-  /* TABLE SCROLL */
-  .schedule-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+/* SPEAKER STACK */
+.speaker {
+flex-direction: column;
+align-items: center;
+}
 
-  /* MAP */
-  iframe {
-    width: 100% !important;
-    height: 250px !important;
-  }
+.speaker-img img {
+width: 120px;
+height: auto;
+}
+
+.speaker-bio {
+width: 100%;
+}
+
+/* TABLE SCROLL */
+.schedule-table {
+display: block;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+/* MAP */
+iframe {
+width: 100% !important;
+height: 250px !important;
+}
 }
