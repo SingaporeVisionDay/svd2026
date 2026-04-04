@@ -111,28 +111,35 @@ NAVBAR
   object-fit: contain;
 }
 
-.custom-nav .navbar-nav > li > a {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
 .navbar-nav > li > a {
   color: #1f2937;
   font-weight: 500;
   font-size: 15px;
 }
 
-.navbar-nav > li > a:hover {
-  color: #1e40af;
+
+/* =====================================================
+BOOTSTRAP OVERRIDE (IMPORTANT FIX)
+===================================================== */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 
 /* =====================================================
-SECTION CARDS
+SECTION CARDS (CENTERED + FIXED WIDTH)
 ===================================================== */
 .section-card {
+  max-width: 900px;
+  margin: 30px auto;
   padding: 28px 30px;
-  margin-bottom: 30px;
+
   background: #ffffff;
   border-radius: 10px;
   border: 1px solid #f0f0f0;
