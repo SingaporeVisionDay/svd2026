@@ -16,7 +16,9 @@ body *::selection {
 }
 
 .container {
-  max-width: 980px;
+  max-width: 980px !important;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 img {
@@ -119,24 +121,25 @@ NAVBAR
 
 
 /* =====================================================
-BOOTSTRAP OVERRIDE (IMPORTANT FIX)
+BOOTSTRAP OVERRIDE (CRITICAL FIX)
 ===================================================== */
 .row {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .col-md-12 {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 
 /* =====================================================
-SECTION CARDS (CENTERED + FIXED WIDTH)
+SECTION CARDS (FINAL FIX)
 ===================================================== */
 .section-card {
-  max-width: 900px;
+  width: 100%;
+  max-width: 880px;              /* slightly tighter = nicer */
   margin: 30px auto;
   padding: 28px 30px;
 
