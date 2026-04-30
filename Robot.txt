@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://singaporevisionday.github.io/svd2026/sitemap.xml
